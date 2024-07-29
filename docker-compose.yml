@@ -10,6 +10,8 @@ services:
       - SA_PASSWORD=Aa123456
     ports:
       - '8002:1433'
+    volumes:
+      - C:\testDocker\volumes\sqlserver:/var/opt/mssql/data   
     networks:
       - mynetwork
   docker-compose-sql-sample:

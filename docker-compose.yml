@@ -1,0 +1,27 @@
+version: '3.4'
+networks:
+  mynetwork:
+services:
+  mssql-container:
+    image: 'mcr.microsoft.com/mssql/server:latest'
+    container_name: mssql
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Aa123456
+    ports:
+      - '8002:1433'
+    networks:
+      - mynetwork
+  docker-compose-sql-sample:
+    container_name: webapicontainer
+    image: '${DOCKER_REGISTRY-}dockercomposesqlsample'
+    build:
+      context: .
+      dockerfile: Docker-Compose-Sql-Sample/Dockerfile
+    ports:
+      - '8001:8080'
+      - '8003:8081'
+    networks:
+      - mynetwork
+    depends_on:
+      - mssql-container

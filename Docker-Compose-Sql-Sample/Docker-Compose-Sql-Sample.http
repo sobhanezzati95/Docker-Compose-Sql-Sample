@@ -1,0 +1,6 @@
+@Docker_Compose_Sql_Sample_HostAddress = http://localhost:5174
+
+GET {{Docker_Compose_Sql_Sample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

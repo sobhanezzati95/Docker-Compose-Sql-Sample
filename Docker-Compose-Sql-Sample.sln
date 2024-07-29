@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docker-Compose-Sql-Sample", "Docker-Compose-Sql-Sample\Docker-Compose-Sql-Sample.csproj", "{DC7335B2-6BC6-4567-BF41-6E2974123A50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC7335B2-6BC6-4567-BF41-6E2974123A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7335B2-6BC6-4567-BF41-6E2974123A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7335B2-6BC6-4567-BF41-6E2974123A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7335B2-6BC6-4567-BF41-6E2974123A50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {372C9081-8159-470A-9A01-C1DC42ADD0A0}
+	EndGlobalSection
+EndGlobal
